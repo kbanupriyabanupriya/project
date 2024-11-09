@@ -1,0 +1,42 @@
+.head{
+  font-size: 50px;
+  margin: 0;
+  padding-top:10px ;
+  padding-bottom: 20px;
+  background-color: rgb(112, 4, 4);
+  color: white;
+  
+}
+
+div{
+  font-size: 20px;
+}
+
+.box{
+  background-color: rgb(209, 209, 209);
+  color: rgb(0, 0, 0);
+  height: 350px;
+}
+
+.boxhead{
+  font-size: 30px;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  margin-left: 25px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+}
+.button:hover{
+  transition: 0.3s ;
+  opacity: 0.7;
+}
+
+.button:active{
+  background-color: rgb(1, 53, 1);
+  transition: 0.1s;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="cal.css">
+  </head>
+  <body style="background-color: black;">
+    <p ><center style="background-color: rgb(66, 20, 20);" class="head"> Simple Calculator</center></p>
+    <p style="font-size: 20px ; background-color: black; color: white;">This simple calculator shows the simple calculation such as addition ,subraction,multiplication,division.</p>
+    <center>
+        <input type="text" id="view" class="view ">
+          <p> 
+            <button onclick="
+              update('1');
+              ">1</button>
+            <button onclick="
+              update('2');
+            ">2</button>
+            <button onclick="
+              update('3'); 
+            ">3</button>
+            <button onclick="
+              update('+');
+           " class="button5" >+</button></p>
+          <p>
+            <button onclick="
+              update('4');
+              ">4</button>
+            <button onclick="
+              update('5');
+            ">5</button>
+            <button onclick="
+              update('6');
+           ">6</button>
+            <button onclick="
+              update('-');
+           " class="button4" >-</button></p>
+          <p> 
+            <button onclick="
+             update('7');
+      
+           ">7</button>
+            <button onclick="
+              update('8');
+           ">8</button>
+            <button onclick="
+              update('9');
+           ">9</button>
+            <button onclick="
+              update('*');
+           " class="button3"
+            >*</button></p>
+          <p>
+            <button onclick="
+              update('0');
+           ">0</button>
+            <button onclick="
+              update('.');
+           "class="button2">.</button> 
+            <button onclick="
+            calculation=eval(calculation);
+            console.log(calculation);
+            fun();
+            localStorage.setItem('score',calculation);
+           ">=</button>
+            <button onclick="
+              update('/');
+           " class="button1" >/</button></p>
+          <p class="clrdel">
+            <button onclick="
+            calculation=' ';
+            console.log('cleared...');
+            fun();
+            localStorage.setItem('score',calculation);
+           " class="clear-button" >Ac</button>
+           <button class="del" onclick=" document.getElementById(`view`).value =  document.getElementById(`view`).value.toString().slice(0,-1)">del</button>
+          </p>
+    </center>
+        <script src="cal.js">
+        </script>
+  </body>
+</html>

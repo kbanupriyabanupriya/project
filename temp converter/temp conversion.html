@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>temperature conversion</title>
+    <link rel="stylesheet" href="temp conversion.css">
+  </head>
+  <body>
+    <div>
+      <center>
+        <p class="head">
+          Temperature converter
+        </p>
+      </center>
+    </div>
+    <br>
+    <div>
+      <p>  Temperature conversion involves converting temperatures between different scales ,such as celsius, fahrenheit and  kelvin.</p>
+    </div>
+    <div class="box">
+      <p > <center class="boxhead" >Temperature converter</center> </p>
+      <div>
+        <br>
+        <form>
+          <label style="padding-left: 4px;" >
+            From :
+          </label>
+          <select id="from">
+            <option value="celsius" >celsius</option>
+            <option value="fahrenheit">fahrenheit</option>
+            <option value="kelvin">kelvin</option>
+           </select>
+           <label style="padding-left: 4px;" >
+            To :
+          </label>
+          <select id="to">
+            <option value="celsius" >celsius</option>
+            <option value="fahrenheit">fahrenheit</option>
+            <option value="kelvin">kelvin</option>
+           </select>
+
+           <br>
+           <br>
+
+           <label style="padding-left: 4px;">value :</label>
+          <input type="text" id="value" placeholder="Enter the value">
+          <br>
+          <br>
+          <br>
+          <center><input class="button" style="margin-left: 14px;" type="button" value="submit" onclick="conversion()"> </center>
+        </form>
+        <br>
+        <br>
+        
+        <p class ="result" >  </p>
+      </div>      
+    </div>
+    
+    
+    
+    <script src="temp conversion.js"></script>
+  </body>
+</html>

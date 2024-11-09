@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <div class="search" >
+      <input class="search-box" spellcheck="false" type="text" placeholder="search the city">
+      <button class="search-btn">
+        <img class="search-img" src="search.png">
+      </button>
+    </div>
+    <div class="details" id="weather" style="display: block;">
+      <div class="error" style="display: none;">
+        Invalid city name
+      </div>
+      <div class="weather" style="display: none;">
+        <img class="weather-img" src="clouds.png" >
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">chennai</h2>
+      </div>
+      <div class="subs" style="display: none;">
+        <div class="humidity">
+          <img src="humidity.png" class="humidity-img">
+          <div>
+            <p class="humidity-value">22%</p>
+            <p class="humidity-name">Humidity</p>
+          </div>
+        </div>
+        <div class="wind">
+          <img src="wind.png" class="wind-img">
+          <div>
+            <p class="wind-speed">2.34km\hr</p>
+            <p class="wind-name">wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script src="script.js">
+
+  </script>
+
+</body>
+</html>
